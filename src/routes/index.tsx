@@ -1,19 +1,26 @@
 import { Title } from "@solidjs/meta";
-import Counter from "~/components/Counter";
+import DataCardComponent from "~/components/data-card/data-card";
+import { dataService } from "../services/service";
+import { For, createResource } from "solid-js";
+import ProfileCardComponent from "~/components/profil-card/profile-card";
+import { ContextProvider } from "~/contexts/context";
 
 export default function Home() {
+  const [data] = createResource<any[], string>(dataService)
+
   return (
-    <main>
-      <Title>Hello World</Title>
-      <h1>Hello world!</h1>
-      <Counter />
-      <p>
-        Visit{" "}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>{" "}
-        to learn how to build SolidStart apps.
-      </p>
-    </main>
+      <main class="dark-blue">
+        <Title>SolidJS Project</Title>
+        <ContextProvider>
+          <div class="card-wrapper">
+            <ProfileCardComponent />
+            <For each={data()}>
+              {(data) => {
+                return (<DataCardComponent card={data} />)  
+              }}
+            </For>
+          </div>
+        </ContextProvider>
+      </main>
   );
 }
