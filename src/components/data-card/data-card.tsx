@@ -25,7 +25,7 @@ export default function DataCardComponent(props: any) {
       <div class="data-container very-dark-blue">
         <span style="font-size: 1.125rem; display: block">{props.card.title}</span>
         <div class="align-right">
-          <img src="./src/assets/icon-ellipsis.svg" alt="ellipsis" />
+          <img src="/icon-ellipsis.svg" alt="ellipsis" />
         </div>
         <span class="data-value">{props.card.timeframes[context()].current} Hrs</span>
         <span class="data-previous pale-blue align-right">{getLabel(context())} - {props.card.timeframes[context()].previous} hrs</span>
