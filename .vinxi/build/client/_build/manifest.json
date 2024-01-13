@@ -1,0 +1,73 @@
+{
+  "\u0000virtual:#vinxi/handler/client.css": {
+    "file": "assets/client-774b0d81.css",
+    "src": "\u0000virtual:#vinxi/handler/client.css"
+  },
+  "_HttpStatusCode-e11d078d.js": {
+    "dynamicImports": [
+      "src/routes/about.tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css",
+      "src/routes/[...404].tsx?pick=default&pick=$css"
+    ],
+    "file": "assets/HttpStatusCode-e11d078d.js"
+  },
+  "_index-0beda7f6.js": {
+    "file": "assets/index-0beda7f6.js",
+    "imports": [
+      "_web-2c7ce673.js"
+    ]
+  },
+  "_web-2c7ce673.js": {
+    "file": "assets/web-2c7ce673.js"
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "assets/_...404_-3462bc07.js",
+    "imports": [
+      "_web-2c7ce673.js",
+      "_index-0beda7f6.js",
+      "_HttpStatusCode-e11d078d.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css"
+  },
+  "src/routes/about.tsx?pick=default&pick=$css": {
+    "file": "assets/about-96d55f7c.js",
+    "imports": [
+      "_web-2c7ce673.js",
+      "_index-0beda7f6.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/about.tsx?pick=default&pick=$css"
+  },
+  "src/routes/index.css": {
+    "file": "assets/index-f41be853.css",
+    "src": "src/routes/index.css"
+  },
+  "src/routes/index.tsx?pick=default&pick=$css": {
+    "css": [
+      "assets/index-f41be853.css"
+    ],
+    "file": "assets/index-3398b251.js",
+    "imports": [
+      "_web-2c7ce673.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/index.tsx?pick=default&pick=$css"
+  },
+  "virtual:#vinxi/handler/client": {
+    "css": [
+      "assets/client-774b0d81.css"
+    ],
+    "file": "assets/client-7cd2eabe.js",
+    "imports": [
+      "_web-2c7ce673.js",
+      "_HttpStatusCode-e11d078d.js",
+      "_index-0beda7f6.js"
+    ],
+    "isEntry": true,
+    "src": "virtual:#vinxi/handler/client"
+  }
+}
