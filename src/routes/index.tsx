@@ -10,7 +10,6 @@ export default function Home() {
 
   return (
       <main class="dark-blue">
-        <Title>SolidJS Project</Title>
         <ContextProvider>
           <div class="card-wrapper">
             <ProfileCardComponent />
