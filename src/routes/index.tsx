@@ -22,7 +22,11 @@ export default function Home() {
    */
   return (
     <main class="dark-blue">
-      <ContextProvider></ContextProvider>
+      <ContextProvider>
+        <div class="card-wrapper">
+          <ProfileCardComponent />
+        </div>
+      </ContextProvider>
     </main>
 
 );
