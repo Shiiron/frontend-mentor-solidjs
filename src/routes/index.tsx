@@ -6,8 +6,8 @@ import { dataService } from "~/services/service";
 
 export default function Home() {
   const [data] = createResource<any[], string>(dataService)
-  return (
-    <main class="dark-blue">
+  /**
+   *     <main class="dark-blue">
       <ContextProvider>
         <div class="card-wrapper">
           <ProfileCardComponent />
@@ -19,5 +19,9 @@ export default function Home() {
         </div>
       </ContextProvider>
     </main>
+   */
+  return (
+    <main class="dark-blue"></main>
+
 );
 }
