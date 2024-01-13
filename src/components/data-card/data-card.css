@@ -1,3 +1,7 @@
+.ellipsis:hover {
+    cursor: pointer;
+}
+
 .data-wrapper {
     border-radius: 1rem;
     position: relative;
@@ -19,6 +23,12 @@
     justify-content: space-between;
     position: relative;
     z-index: 2;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.data-container:hover {
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
 }
 
 .section-logo {

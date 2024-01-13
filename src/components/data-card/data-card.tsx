@@ -1,10 +1,5 @@
-import { Card } from "~/models/card";
 import "./data-card.css";
 import { useTimeContext } from "~/contexts/context";
-
-interface CardProps {
-  card: Card
-}
 
 export default function DataCardComponent(props: any) {
   const { context }: any = useTimeContext()
@@ -22,10 +17,10 @@ export default function DataCardComponent(props: any) {
   return (
     <div class={classes}>
       <img class="section-logo" src={imgSrc} />
-      <div class="data-container very-dark-blue">
+      <div class="data-container">
         <span style="font-size: 1.125rem; display: block">{props.card.title}</span>
         <div class="align-right">
-          <img src="/icon-ellipsis.svg" alt="ellipsis" />
+          <img class="ellipsis" src="/icon-ellipsis.svg" alt="ellipsis" />
         </div>
         <span class="data-value">{props.card.timeframes[context()].current} Hrs</span>
         <span class="data-previous pale-blue align-right">{getLabel(context())} - {props.card.timeframes[context()].previous} hrs</span>
