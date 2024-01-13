@@ -9,7 +9,7 @@ interface CardProps {
 export default function DataCardComponent(props: any) {
   const { context }: any = useTimeContext()
   const classes = `${props.card.title.toLowerCase()} data-wrapper`
-  const imgSrc = `./src/assets/icon-${props.card.title.toLowerCase() ==='self care' ? 'self-care' : props.card.title.toLowerCase()}.svg`
+  const imgSrc = `./icon-${props.card.title.toLowerCase() ==='self care' ? 'self-care' : props.card.title.toLowerCase()}.svg`
   const getLabel = (label: string) => {
     if (label === 'daily') {
       return 'Yesterday'
