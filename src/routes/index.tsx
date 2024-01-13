@@ -19,6 +19,12 @@ export default function Home() {
       <ContextProvider>
         <div class="card-wrapper">
           <ProfileCardComponent />
+          <DataCardComponent card={data[0]} />
+          <DataCardComponent card={data[1]} />
+          <DataCardComponent card={data[2]} />
+          <DataCardComponent card={data[3]} />
+          <DataCardComponent card={data[4]} />
+          <DataCardComponent card={data[5]} />
         </div>
       </ContextProvider>
     </main>
