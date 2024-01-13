@@ -21,7 +21,9 @@ export default function Home() {
     </main>
    */
   return (
-    <main class="dark-blue"></main>
+    <main class="dark-blue">
+      <ContextProvider></ContextProvider>
+    </main>
 
 );
 }
