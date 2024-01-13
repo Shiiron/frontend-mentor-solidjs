@@ -6,7 +6,7 @@ import { dataService } from "~/services/service";
 
 export default function Home() {
   const [data] = createResource<any[], string>(dataService)
-
+// <DataCardComponent card={data} />
   return (
     <main class="dark-blue">
       <ContextProvider>
@@ -14,7 +14,7 @@ export default function Home() {
           <ProfileCardComponent />
           <For each={data()}>
             {data =>
-              <DataCardComponent card={data} />
+              <li>{data.title}</li>
             }
           </For>
         </div>
