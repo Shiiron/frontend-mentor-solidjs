@@ -11,6 +11,7 @@ export default function Home() {
       <ContextProvider>
         <div class="card-wrapper">
           <ProfileCardComponent />
+          
           <For each={data()}>
             {(data) => {
               return (<DataCardComponent card={data} />)  
@@ -25,6 +26,11 @@ export default function Home() {
       <ContextProvider>
         <div class="card-wrapper">
           <ProfileCardComponent />
+          <For each={data()}>
+            {(data) =>
+              <DataCardComponent card={data} />
+            }
+          </For>
         </div>
       </ContextProvider>
     </main>

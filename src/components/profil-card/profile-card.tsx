@@ -6,7 +6,7 @@ export default function ProfileCardComponent() {
     return (
         <div class="profile-card very-dark-blue">
             <div class="blue profile">
-                <img src="/src/assets/image-jeremy.png" alt="profile picture" />
+                <img src="./src/assets/image-jeremy.png" alt="profile picture" />
 
                 <div>
                     <span class="pale-blue" style="display: block">Report for</span>
