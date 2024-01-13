@@ -1,30 +1,53 @@
-# SolidStart
+# Frontend Mentor - Time tracking dashboard solution
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Creating a project
+## Table of contents
 
-```bash
-# create a new project in the current directory
-npm init solid@latest
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-# create a new project in my-app
-npm init solid@latest my-app
-```
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Developing
+## Overview
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### The challenge
 
-```bash
-npm run dev
+Users should be able to:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Switch between viewing Daily, Weekly, and Monthly stats
 
-## Building
+### Screenshot
 
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
+![](./src/assets/screenshot.jpg)
 
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+### Links
+
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/solidjs-time-tracking--dyYBIiClS)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-solidjs.vercel.app/)
+
+## My process
+
+### Built with
+
+- [SOLIDJS] (https://www.solidjs.com/)
+- CSS custom properties
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+
+SolidJS seems to be a great framework but i did had a lots of troubles using and configuring it, especially when deploying it to the server
+Might try to use it for bigger project to get a better grasp of it
+
+## Author
+
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Shiiron)
