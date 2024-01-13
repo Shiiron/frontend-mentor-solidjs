@@ -7,16 +7,18 @@ import { dataService } from "~/services/service";
 export default function Home() {
   const [data] = createResource<any[], string>(dataService)
 // <DataCardComponent card={data} />
+/**
+ *           <For each={data()}>
+            {data =>
+              <li>{data.title}</li>
+            }
+          </For>
+ */
   return (
     <main class="dark-blue">
       <ContextProvider>
         <div class="card-wrapper">
           <ProfileCardComponent />
-          <For each={data()}>
-            {data =>
-              <li>{data.title}</li>
-            }
-          </For>
         </div>
       </ContextProvider>
     </main>
